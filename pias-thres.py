@@ -1,4 +1,3 @@
-import scipy as sp
 import scipy.optimize as opt
 import numpy as np
 import numdifftools as nd
