@@ -28,8 +28,6 @@ def cdf_inv(x, d='uniform'):
     samples = distrib[d]
     return np.interp(x, samples[:,1],samples[:,0])
 
-epsilon = 1e-2 # A really small number
-
 def threshold_calc(K=8, load=0.5, dist='uniform'):
     theta = np.random.random_sample(K-1,)
     theta = theta / np.sum(theta)
